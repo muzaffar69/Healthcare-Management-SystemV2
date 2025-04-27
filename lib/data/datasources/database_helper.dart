@@ -248,9 +248,14 @@ class DatabaseHelper {
       final prescriptions = await readVisitPrescriptions(visits[i].id!);
       final labOrders = await readVisitLabOrders(visits[i].id!);
       
-      visits[i] = visits[i].copyWith(
-        prescriptions: prescriptions,
-        labOrders: labOrders,
+      visits[i] = Visit(
+        id: visits[i].id,
+        patientId: visits[i].patientId,
+        date: visits[i].date,
+        details: visits[i].details,
+        // Create new lists to avoid type conflicts
+        prescriptions: List<Prescription>.from(prescriptions),
+        labOrders: List<LabOrder>.from(labOrders),
       );
     }
     
