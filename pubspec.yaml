@@ -34,7 +34,7 @@ dependencies:
   # Database
   sqflite: ^2.2.8+4
   sqflite_common_ffi: ^2.3.0
-  path: ^1.8.3
+  path: ^1.8.2
   
   # UI components
   fl_chart: ^0.62.0
