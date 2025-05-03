@@ -1,0 +1,64 @@
+medical_practice_app/
+├── assets/
+│   ├── images/
+│   │   └── logo.png
+├── lib/
+│   ├── main.dart
+│   ├── app.dart
+│   ├── config/
+│   │   ├── routes.dart
+│   │   ├── theme.dart
+│   │   └── constants.dart
+│   ├── core/
+│   │   ├── azure/
+│   │   │   ├── azure_service.dart
+│   │   │   ├── auth_service.dart
+│   │   │   └── database_service.dart
+│   │   ├── models/
+│   │   │   ├── user_model.dart
+│   │   │   ├── patient_model.dart
+│   │   │   ├── visit_model.dart
+│   │   │   ├── prescription_model.dart
+│   │   │   └── lab_test_model.dart
+│   │   └── services/
+│   │       ├── api_service.dart
+│   │       ├── pdf_service.dart
+│   │       └── offline_sync_service.dart
+│   ├── presentation/
+│   │   ├── common/
+│   │   │   ├── widgets/
+│   │   │   │   ├── custom_button.dart
+│   │   │   │   ├── custom_text_field.dart
+│   │   │   │   ├── loading_animation.dart
+│   │   │   │   ├── sidebar_navigation.dart
+│   │   │   │   └── patient_card.dart
+│   │   │   └── animations/
+│   │   │       ├── page_transitions.dart
+│   │   │       ├── button_animations.dart
+│   │   │       └── search_animations.dart
+│   │   ├── screens/
+│   │   │   ├── auth/
+│   │   │   │   ├── login_screen.dart
+│   │   │   │   └── forgot_password_screen.dart
+│   │   │   ├── doctor/
+│   │   │   │   ├── home_screen.dart
+│   │   │   │   ├── dashboard_screen.dart
+│   │   │   │   ├── patient_list_screen.dart
+│   │   │   │   ├── patient_details_screen.dart
+│   │   │   │   ├── add_patient_screen.dart
+│   │   │   │   ├── visit_details_screen.dart
+│   │   │   │   ├── add_visit_screen.dart
+│   │   │   │   ├── drug_management_screen.dart
+│   │   │   │   ├── lab_test_management_screen.dart
+│   │   │   │   └── settings_screen.dart
+│   │   │   ├── pharmacy/
+│   │   │   │   └── pharmacy_screen.dart
+│   │   │   ├── lab/
+│   │   │   │   └── lab_screen.dart
+│   │   │   └── admin/
+│   │   │       └── admin_dashboard_screen.dart
+│   │   └── state/
+│   │       ├── auth_provider.dart
+│   │       ├── patient_provider.dart
+│   │       ├── visit_provider.dart
+│   │       └── settings_provider.dart
